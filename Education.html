@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/styleEducation.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel = "stylesheet"
+		href = "https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script type = "text/javascript"
+		src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		</script>
+		<script type = "text/javascript"
+		src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+		</script>
+		<script src="scripts/Info.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</head>
+	<body style="background-color: white; margin: 0;">
+	<!--  Navigation Menu  -->
+	<div id="top"></div>
+	<ul class="menu" id="myMenu">
+	</ul>
+	<div class = "ui-widget">
+		<input id = "tags">
+		<label id="search" onclick="searching()">Search</label>
+	</div>
+	<a class="icon" onclick="openMenu()"><image src="Images/General/Menu.png" /></a>
+	
+	<!-- Button to top -->
+	<a href="#top">
+		<div class="buttonToTop">
+			^
+		</div>
+	</a>
+	
+	<!-- Page Logo -->
+	<div class="TitleBackground">
+		<div class="TitleBox" style="background-color: blue"></div>
+		<div class="Title">Education</div>
+	</div>
+	
+	<!---------- Content Here ---------->
+	
+	<!-- School Link & Logo -->
+	<h1 id = "school" style="text-align: center; font-family: MaskedHero; font-size: 4vw; margin: 8vw auto auto 2vw;">School</h1>
+	<a href="https://www.nyp.edu.sg/" target="_blank">
+		<div  class="school" alt="NYP Picture"></div>
+	</a>
+	
+	<!-- Current Status -->
+	<h1 style="text-align: center; font-size: 2.5vw; margin: 4vw auto auto 2vw">Current Status</h1>
+	<div id="ID">
+		<div class="grid-container" style="width: 37vw;">
+			<div class="grid-item">
+				Name: Toby Chua Bo Yang
+			</div>
+			<div class="grid-item">
+				Current Year: 2
+			</div>
+			<div class="grid-item">
+				GPA: ???
+			</div>
+			<div class="grid-item">
+				Current CCA: <br> Sakura Japanese Club (AAA)
+			</div>
+			<div class="grid-item" style="grid-row: 1 / 5; grid-column: 2 / 3">
+				<image src="Images/Education/Machio.png" style="height: 15vw; margin-left: 50%; transform: translate(-50%, 0)" alt="Profile Pic"></image>
+			</div>
+		</div>
+	</div>
+	
+	<!-- CCA I've been in -->
+	<h1 id = "CCA" style="text-align: center; font-size: 2.5vw; margin: 4vw auto auto 2vw">CCAs I've been in</h1>
+	
+	<div class="grid-container" style="grid-template-columns: auto auto auto; width: 100%; border: 0; border-top: 0.3vw solid black">
+	
+		<!-- CCA Titles -->
+		<div class="CCAoption" id="cca1">Robotics</div>
+		<div class="CCAoption" id="cca2">Tri-touch<br>Club</div>
+		<div class="CCAoption" id="cca3">Sakura Japanese<br>Club</div>
+		
+		<!-- CCAs Information -->
+		<div id="infoBox">
+		
+			<!-- CCA 1 info -->
+			<div class="information" id="info1">
+				<div>
+					When I was in primary school, I used legos for robotics where we could build our own robot and program it. 
+					There were various types of activities we could base our robots on. 
+					<br>
+					<ul>
+						<li>Sumo</li>
+						<li>Racing</li>
+						<li>Soccer</li>
+					</ul>
+					I was suppose to be part of a competition but I forgot about it.<br>
+					My teammate had to solo the competition after that.<br>
+					I only received a call about it after the compeition when I woke up. Whoops
+				</div>
+				<div>
+					<image src="Images/Education/Robotics.png" alt="Robot Pic" style="height: 20vw;"></image>
+				</div>
+			</div>
+			
+			<!-- CCA 2 info -->
+			<div class="information" id="info2">
+				<div>
+					Tri-touch club was a community service club where we learned about social interaction. <br>
+					There were various activities we did as well as excursions <br>
+					There were stuff like:
+					<ul>
+						<li>Playing the ukelele</li>
+						<li>Sculpting and Painting</li>
+						<li>Entertaining the elderlies at an Old Folk's Home</li>
+					</ul>
+					None of the members were good at the ukelele including me. Everyone felt awkward.<br>
+					The sculptures we made were to be sold. The most popular ones were Pokemon related.<br>
+					As for the elderlies, we would play the ukelele and dance with them.
+				</div>
+				<div>
+					<image src="Images/Education/Tritouch.png" alt="Tritouch Pic" style="height: 20vw;"></image>
+				</div>
+			</div>
+			
+			<!-- CCA 3 info -->
+			<div class="information" id="info3">
+				<div>
+					Japanese Sakura club is hosted by senior students within the school.
+					The club does activities relating the Japan.
+					However, since there were so many they split it up into 4 different clubs.
+					<ul>
+						<li>Drawing (AAA)</li>
+						<li>Cosplay</li>
+						<li>Dancing</li>
+						<li>Origami</li>
+					</ul>
+					I chose AAA which teaches us how to draw characters and environments.<br>
+					Apart from that they give Japanese lessons monthly given by teacher's from Japan.<br>
+					I haven't been able to attend the lessons since last year because of lessons <br>
+					but it's still fine :P
+				</div>
+				<div>
+					<image src="Images/Education/AAA.jpg" alt="Sketch Pic" style="height: 20vw;"></image>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+.TitleBackground {
+	background-image: url('../Images/Education/TitleBackground.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-bottom: 1vw solid;
+}
+
+.school{
+	background-image: url('../Images/Education/school.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 17vw;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 20vw 17vw;
+	border: 0.12vw solid black;
+	margin-left: 50%;
+	margin-bottom: 3vw;
+	transform: translate(-50%, 0);
+	background-color: white;
+}
+
+.grid-item{
+	border: 0.12vw solid black;
+	padding: 0.5vw;
+	font-size: 1.5vw;
+}
+
+#ID {
+	background-image: Linear-gradient( rgba(225, 211, 153) , rgba(220, 158, 77));
+}
+
+.CCAoption {
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	font-size: 2vw;
+	text-align: center;
+}
+
+#cca1 {
+	background-image: Linear-gradient( rgba(40, 152, 201) 0%, rgba(91,207,255) 100%)
+}
+
+#cca2 {
+	background-image: Linear-gradient( rgba(75, 166, 47) 0%, rgba(104,255,58) 100%)
+}
+
+#cca2:hover ~ #infoBox #info2{
+	opacity: 1;
+}
+
+#cca3 {
+	background-image: Linear-gradient( rgba(201, 87, 166) 0%, rgba(255,116,229) 100%)
+}
+
+#cca3:hover ~ #infoBox #info3{
+	opacity: 1;
+}
+
+#infoBox{
+	grid-column: 1 / 4; 
+	position: relative;
+}
+
+.information {
+	position: absolute;
+	height: 20vw;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vw;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#info1 {
+	background-image: Linear-gradient( rgba(91,207,255) 0%, rgba(162,228,255) 100%);
+	opacity: 1;
+}
+
+#info2 {
+	background-image: Linear-gradient( rgba(104,255,58) 0%, rgba(201,255,208) 100%);
+	opacity: 0;
+}
+
+#info3 {
+	background-image: Linear-gradient( rgba(255,116,229) 0%, rgba(255,206,241) 100%);
+	opacity: 0;
+}

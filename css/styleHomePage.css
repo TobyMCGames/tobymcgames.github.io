@@ -1,0 +1,107 @@
+.wallpaper {
+	background-image: url('../Images/Home/CyberBG.jpg');
+}
+
+.logo{
+	color: rgba(100,130,255) ;
+	text-shadow: 0 0 25px #135F84;
+	font-size:4vw; 
+	font-family:bold; 
+	text-align:center;
+	background-color: rgba(230,230,230);
+	width:30vw;
+	margin: 2vw auto 2vw auto;
+	border-radius: 3vw;
+}
+
+.contentBox{
+	background: rgba(50 50 50);
+	margin: auto auto 5vw auto;
+	padding: 0 0 2vw 0;
+	box-shadow: 0px 20px 20px #888888;
+	border-radius: 25px;
+	width: 92.5vw;
+}
+			
+.slider-frame{
+	overflow:hidden;
+	padding-top: 20px;
+	padding-left: 0;
+	width: 92.5vw;
+}
+			
+@-webkit-keyframes slide_animation{
+	0% {left:0vw;}
+	10%{left:0vw;}
+	20%{left:0vw;}
+	30%{left:92.5vw;}
+	40%{left:92.5vw;}
+	50%{left:92.5vw;}
+	60%{left:185vw;}
+	70%{left:185vw;}
+	80%{left:185vw;}
+	90%{left:0vw;}
+	100%{left:0vw;}
+}
+			
+.slide-images{
+	width: 300%;
+	margin: 0 0 0 -200%;
+	padding-left: 0;
+	position: relative;
+	-webkit-animation-name: slide_animation;
+	-webkit-animation-duration: 27s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+			
+.img-container{
+	float: left;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.img-container img
+{
+	width: 92.5vw;
+}
+
+#intro
+{
+	font-family: slkscr;
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px)
+{
+	#intro h1
+	{
+		font-size: 6vw;
+	}
+	
+	#intro .description
+	{
+		font-size: 2.8vw;
+	}
+	
+	.img-container img
+	{
+		height: 40vw;
+	}
+}
+
+@media screen and (min-width: 1000px)
+{
+	#intro h1
+	{
+		font-size: 2vw;
+	}
+	
+	#intro .description
+	{
+		font-size: 1.4vw;
+	}
+}
+

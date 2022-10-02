@@ -1,0 +1,36 @@
+.wallpaper {
+	background-image: url('../Images/AnimeList/Izuku_and_Shoto_Final_Clash.gif');
+}
+
+h1 {
+	font-family: MaskedHero;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+@media screen and (max-width: 1000px)
+{
+	h1 
+	{
+		font-size:4vw;
+	}
+	
+	h1 span
+	{
+		font-size: 3vw;
+	}
+}
+
+@media screen and (min-width: 1000px)
+{
+	h1 
+	{
+		font-size:2vw;
+	}
+	
+	h1 span
+	{
+		font-size: 1.5vw;
+	}
+}

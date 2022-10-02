@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/styleAboutMe.css" rel="stylesheet">
+		<link rel = "stylesheet"
+		href = "https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script type = "text/javascript"
+		src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+		</script>
+		<script type = "text/javascript"
+		src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+		</script>
+		<script src="scripts/Info.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+		<script src="scripts/AboutMe_Info.js"></script>
+		<script src="scripts/AboutMe_script.js"></script>
+	</head>
+	<body class="wallpaper">
+	<!--  Navigation Menu  -->
+	<div id="top"></div>
+	<ul class="menu" id="myMenu">
+	</ul>
+	<div class = "ui-widget">
+		<input id = "tags">
+		<label id="search" onclick="searching()">Search</label>
+	</div>
+	<a class="icon" onclick="openMenu()"><image src="Images/General/Menu.png" /></a>
+	
+	<!-- Button to top -->
+	<a href="#top">
+		<div class="buttonToTop">
+			^
+		</div>
+	</a>
+	
+	<!--  Logo  -->
+	<div class="TitleBackground" style="background-image: url('Images/AboutMe/AboutMeTitleBackground.jpg');">
+		<div class="TitleBox" style="background-color: black"></div>
+		<div class="Title">About Me</div>
+	</div>
+	
+	<!------- Content Below -------->
+	<div class="contentBox">
+			
+			<!-- Video & brief description -->
+			<div class="descriptive_Video">
+				<video autoplay muted loop>
+				  <source src="Videos/AboutmeHistory.mp4" type="video/mp4" alt="Video">
+
+				  Your browser does not support the video tag. 
+				</video>
+				<div class="vid-description">
+					I'm Toby Chua Bo Yang, a student currently studying in Nanyang Polytechnic.<br><br>
+					I spent most of my time with my family and in the past we loved to travel around to enjoy the world.<br><br>
+					I grew quite alot over the years and found new friends and hobbies like playing games and watching anime.
+				</div>
+			</div>
+			
+			
+			<!-- My Projects -->
+			<div style="margin: 5vw 1vw 2vw 1vw; grid-column-start: 1; grid-column-end: 3;">
+				<p>
+					My
+					<span><img src="Images/AboutMe/MarioBros.gif" alt="Mario gif" style="width: 4.5vw;"></span>
+					Projects
+				</p>
+			</div>
+			
+			<div id="Projects">
+			</div>
+	</div>
+	</body>
+</html>

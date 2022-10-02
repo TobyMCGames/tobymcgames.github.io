@@ -1,0 +1,149 @@
+.wallpaper {
+	background-image: url('../Images/GameList/PixelBG.gif');
+}
+#Games
+{
+	overflow: hidden;
+}
+
+#Games #GameBox
+{
+	position: relative;
+}
+
+#Games a
+{
+	float: left;
+	position: relative;
+	width: 25%;
+	overflow: hidden;
+}
+
+.background {
+	background-color: black;
+	opacity: 0.8;
+	height: 100%;
+	transition: all 0.2s
+}
+
+.profile {
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+#leftArrow
+{
+	position: absolute;
+	margin: 22.5% 0 0 0;
+	transform: translate(0, -50%);
+	background-color: black;
+	color: white;
+	font-size: 8vw;
+}
+
+#rightArrow
+{
+	position: absolute;
+	margin: 22.5% 0 0 100%;
+	transform: translate(-100%, -50%);
+	background-color: black;
+	color: white;
+	font-size: 8vw;
+}
+
+.InformationBox {
+	position:relative;
+	border-top: 0.8vw solid white;
+}
+
+.InformationText {
+	position: absolute;
+	font-family: slkscr;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px)
+{
+	#Games
+	{
+		height: 40vw;
+	}
+	
+	#Games #GameBox
+	{
+		width: 400%;
+		transition: transform 0.5s;
+	}
+	
+	#Games a
+	{
+		height: 40vw;
+	}
+	
+	.profile 
+	{
+		margin: 22.5% 0 0 50%;
+		height: 20vw;
+	}
+	
+	.InformationBox
+	{
+		height: 30vw;
+	}
+	
+	#InfoTitle
+	{
+		font-size: 8vw;
+	}
+	
+	#InfoDesc
+	{
+		font-size: 3vw;
+	}
+}
+
+@media screen and (min-width: 1000px)
+{
+	#Games
+	{
+		height: 20vw;
+	}
+	
+	#Games #GameBox
+	{
+		width: 100%;
+	}
+	
+	#Games a
+	{
+		height: 20vw;
+	}
+	
+	#Games .background:hover
+	{
+		background-color: rgba(50, 50,50);
+	}
+	
+	.profile 
+	{
+		margin: 45% 0 0 50%;
+		height: 10vw;
+	}
+
+	.InformationBox
+	{
+		height: 20vw;
+	}
+
+	#InfoTitle
+	{
+		font-size: 4vw;
+	}
+	
+	#InfoDesc
+	{
+		font-size: 1.5vw;
+	}
+}

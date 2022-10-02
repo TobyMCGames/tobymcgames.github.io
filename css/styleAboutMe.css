@@ -1,0 +1,68 @@
+.wallpaper {
+	background-image: url('../Images/AboutMe/AboutMeBackground.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.contentBox {
+	margin: 3vw 5vw 3vw 5vw;
+	background-color: black;
+	border-radius: 1.5vw;
+	padding: 1.5vw;
+	font-family:slkscr;
+}
+
+p {
+	color: white; 
+	text-align: center;
+	font-family:slkscr;
+}
+
+.vid-description{
+	margin: 2vw 4.5vw 2vw 4.5vw;
+	border-radius: 1.3vw;
+	padding: 1.3vw;
+	background-color: rgba(50 50 50);
+	color: white;
+}
+
+@media screen and (max-width: 1000px)
+{
+	p{
+		font-size: 3.5vw; 
+	}
+	
+	.descriptive_Video{
+		
+	}
+	
+	video {
+		width: 100%;
+		left: - 1.5vw;
+	}
+	
+	.vid-description{
+		font-size: 2.4vw;
+	}
+}
+
+@media screen and (min-width: 1000px)
+{
+	p{
+		font-size: 2.5vw; 
+	}
+	
+	.descriptive_Video{
+		display: flex;
+	}
+	
+	video {
+		width: 40vw;
+	}
+	
+	.vid-description{
+		font-size: 1.2vw;
+	}
+}
+
